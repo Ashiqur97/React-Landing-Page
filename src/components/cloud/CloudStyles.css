@@ -1,0 +1,49 @@
+.cloud {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(4, 2, 104, 0.726);
+}
+
+.cloud .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gpt3__header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gpt3__header-image img {
+  width: 100%;
+  height: 80%;
+}
+
+.cloud .content {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin-left: 6rem;
+}
+
+.cloud h2 {
+  color: #f8f8f8;
+}
+
+.cloud p {
+  color: white;
+}
+
+.cloud .blue {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 940px) {
+  .cloud .content {
+    margin-left: 1rem;
+  }
+}
